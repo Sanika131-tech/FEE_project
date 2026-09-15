@@ -1,0 +1,569 @@
+/* =====================================================
+   ARCHIVIO
+   ARCHIVE RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET / SMALL LAPTOP
+   1100px
+===================================================== */
+
+@media (max-width: 1100px) {
+
+
+    /* NAV */
+
+    .archive-nav {
+        grid-template-columns:
+            1fr minmax(160px, 240px) auto;
+
+        gap: 20px;
+    }
+
+    .archive-nav-links {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .archive-hero {
+        min-height: 70vh;
+    }
+
+
+    /* ARCHIVE */
+
+    .archive-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+
+    /* COLLECTIONS */
+
+    .collection-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .collection-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+   800px
+===================================================== */
+
+@media (max-width: 800px) {
+
+
+    /* NAV */
+
+    .archive-nav {
+        min-height: 70px;
+
+        padding: 0 5vw;
+
+        grid-template-columns:
+            1fr minmax(130px, 200px) auto;
+    }
+
+    .archive-brand span {
+        display: none;
+    }
+
+    .nav-profile > span:last-child {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .archive-hero {
+        min-height: 650px;
+
+        padding:
+            90px
+            7vw
+            70px;
+    }
+
+    .hero-content h1 {
+        font-size:
+            clamp(75px, 15vw, 120px);
+    }
+
+    .hero-side-note {
+        right: 7vw;
+        bottom: 35px;
+    }
+
+
+    /* STATS */
+
+    .stats-section {
+        padding:
+            60px
+            7vw
+            80px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat-card:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat-card:nth-child(1),
+    .stat-card:nth-child(2) {
+        border-bottom:
+            1px solid rgba(23, 23, 23, .15);
+    }
+
+
+    /* COLLECTION */
+
+    .collection-section {
+        padding: 90px 7vw;
+    }
+
+    .collection-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 35px;
+    }
+
+    .collection-header h2 {
+        font-size: clamp(55px, 11vw, 85px);
+    }
+
+
+    /* GRID */
+
+    .archive-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .archive-card {
+        min-height: 480px;
+    }
+
+
+    /* TIMELINE */
+
+    .timeline-section {
+        padding: 90px 7vw;
+    }
+
+    .timeline-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .timeline {
+        padding-left: 75px;
+    }
+
+    .timeline::before {
+        left: 25px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 70px 1fr;
+
+        gap: 20px;
+    }
+
+    .timeline-dot {
+        left: -54px;
+    }
+
+
+    /* COLLECTION CARDS */
+
+    .collections-section {
+        padding: 90px 7vw;
+    }
+
+    .collections-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .collection-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-card:last-child {
+        grid-column: auto;
+    }
+
+
+    /* SURPRISE */
+
+    .surprise-section {
+        padding: 90px 7vw;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .surprise-action {
+        align-items: flex-start;
+    }
+
+    .surprise-result {
+        text-align: left;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   600px
+===================================================== */
+
+@media (max-width: 600px) {
+
+
+    /* NAV */
+
+    .archive-nav {
+        grid-template-columns:
+            auto 1fr auto;
+
+        gap: 14px;
+
+        padding: 0 18px;
+    }
+
+    .archive-brand img {
+        width: 28px;
+    }
+
+    .archive-search {
+        max-width: 180px;
+    }
+
+    .archive-search input {
+        font-size: 9px;
+    }
+
+    .theme-button {
+        width: 31px;
+        height: 31px;
+    }
+
+
+    /* HERO */
+
+    .archive-hero {
+        min-height: 620px;
+
+        padding:
+            90px
+            7vw
+            70px;
+    }
+
+    .hero-index {
+        left: 7vw;
+        top: 25px;
+    }
+
+    .hero-content h1 {
+        font-size:
+            clamp(65px, 19vw, 100px);
+
+        line-height: .8;
+    }
+
+    .hero-description {
+        max-width: 290px;
+
+        margin-top: 35px;
+
+        font-size: 11px;
+    }
+
+    .hero-side-note {
+        display: none;
+    }
+
+
+    /* SECTION LABEL */
+
+    .section-label {
+        font-size: 8px;
+    }
+
+
+    /* STATS */
+
+    .stats-section {
+        padding:
+            55px
+            7vw
+            65px;
+    }
+
+    .stats-grid {
+        margin-top: 30px;
+    }
+
+    .stat-card {
+        min-height: 125px;
+
+        padding: 20px 15px;
+    }
+
+    .stat-number {
+        font-size: 48px;
+    }
+
+    .stat-label {
+        font-size: 7px;
+    }
+
+
+    /* COLLECTION */
+
+    .collection-section {
+        padding: 75px 6vw;
+    }
+
+    .collection-header h2 {
+        font-size:
+            clamp(50px, 15vw, 75px);
+    }
+
+
+    /* FILTERS */
+
+    .archive-filters {
+        overflow-x: auto;
+
+        padding-bottom: 5px;
+
+        scrollbar-width: none;
+    }
+
+    .archive-filters::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-button,
+    .clear-button {
+        flex: 0 0 auto;
+
+        padding:
+            9px
+            13px;
+    }
+
+    .clear-button {
+        margin-left: 5px;
+    }
+
+
+    /* GRID */
+
+    .archive-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .archive-card {
+        min-height: 520px;
+    }
+
+
+    /* EMPTY */
+
+    .empty-archive {
+        min-height: 390px;
+
+        padding: 35px 20px;
+    }
+
+    .empty-number {
+        font-size: 80px;
+    }
+
+    .empty-archive h3 {
+        font-size: 42px;
+    }
+
+
+    /* TIMELINE */
+
+    .timeline-section {
+        padding:
+            75px
+            6vw;
+    }
+
+    .timeline-heading {
+        margin-top: 45px;
+    }
+
+    .timeline-heading h2 {
+        font-size:
+            clamp(50px, 15vw, 75px);
+    }
+
+    .timeline {
+        margin-top: 55px;
+
+        padding-left: 30px;
+    }
+
+    .timeline::before {
+        left: 3px;
+    }
+
+    .timeline-item {
+        display: block;
+
+        padding-left: 15px;
+    }
+
+    .timeline-dot {
+        left: -1px;
+
+        width: 7px;
+        height: 7px;
+    }
+
+    .timeline-date {
+        margin-bottom: 10px;
+    }
+
+    .timeline-entry {
+        padding: 17px;
+
+        gap: 15px;
+    }
+
+    .timeline-entry-info h3 {
+        font-size: 25px;
+    }
+
+
+    /* COLLECTION IDEAS */
+
+    .collections-section {
+        padding:
+            75px
+            6vw;
+    }
+
+    .collections-heading {
+        margin-top: 45px;
+    }
+
+    .collections-heading h2 {
+        font-size:
+            clamp(50px, 15vw, 75px);
+    }
+
+    .collection-cards {
+        margin-top: 45px;
+    }
+
+    .collection-card {
+        min-height: 360px;
+
+        padding: 20px;
+    }
+
+    .collection-card h3 {
+        font-size: 43px;
+    }
+
+
+    /* SURPRISE */
+
+    .surprise-section {
+        padding:
+            75px
+            6vw;
+    }
+
+    .surprise-copy h2 {
+        font-size:
+            clamp(55px, 16vw, 85px);
+    }
+
+    .surprise-action {
+        width: 100%;
+    }
+
+    .surprise-button {
+        width: 100%;
+
+        text-align: left;
+    }
+
+
+    /* MODAL */
+
+    .note-modal {
+        padding: 15px;
+    }
+
+    .note-modal-box {
+        padding: 35px 22px;
+    }
+
+    .note-modal-box h3 {
+        font-size: 40px;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+   380px
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .archive-search {
+        max-width: 135px;
+    }
+
+    .archive-search input {
+        font-size: 8px;
+    }
+
+    .archive-brand img {
+        width: 24px;
+    }
+
+    .hero-content h1 {
+        font-size: 63px;
+    }
+
+    .stat-number {
+        font-size: 42px;
+    }
+
+    .archive-card {
+        min-height: 470px;
+    }
+
+}

@@ -1,0 +1,457 @@
+/* =====================================================
+   ARCHIVIO
+   LOGIN PAGE
+   RESPONSIVE CSS
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    /* ---------------------------------------------
+       MAIN LAYOUT
+    --------------------------------------------- */
+
+    .login-page {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* ---------------------------------------------
+       LEFT SIDE
+    --------------------------------------------- */
+
+    .login-intro {
+        padding:
+            35px 5vw;
+    }
+
+
+    .intro-content h1 {
+        font-size:
+            clamp(58px, 6vw, 90px);
+
+        letter-spacing: -2px;
+    }
+
+
+    .intro-content h1 span {
+        margin-left: 5vw;
+    }
+
+
+    .intro-content p {
+        margin-left: 5vw;
+
+        max-width: 320px;
+    }
+
+
+    /* ---------------------------------------------
+       RIGHT SIDE
+    --------------------------------------------- */
+
+    .login-panel {
+        padding:
+            35px 5vw;
+    }
+
+
+    .login-header h2 {
+        font-size:
+            clamp(45px, 5vw, 70px);
+    }
+
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .login-page {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------------------------------------------
+       LEFT CINEMATIC SECTION
+    --------------------------------------------- */
+
+    .login-intro {
+        min-height: 650px;
+
+        height: 70vh;
+
+        padding:
+            30px 7vw;
+    }
+
+
+    .intro-content h1 {
+        font-size:
+            clamp(58px, 10vw, 90px);
+    }
+
+
+    .intro-content p {
+        margin-top: 30px;
+
+        max-width: 350px;
+    }
+
+
+    .login-intro::before {
+        font-size: 20vw;
+    }
+
+
+    /* ---------------------------------------------
+       RIGHT LOGIN SECTION
+    --------------------------------------------- */
+
+    .login-panel {
+        min-height: auto;
+
+        padding:
+            80px 10vw;
+    }
+
+
+    .login-form,
+    .signup-prompt {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* ---------------------------------------------
+       LEFT SIDE
+    --------------------------------------------- */
+
+    .login-intro {
+        min-height: 600px;
+
+        height: 72vh;
+
+        padding:
+            25px 25px;
+    }
+
+
+    /* ---------------------------------------------
+       LOGO + LABEL
+    --------------------------------------------- */
+
+    .intro-top {
+        gap: 11px;
+    }
+
+
+    .login-logo {
+        width: 40px;
+
+        height: 40px;
+    }
+
+
+    .intro-label {
+        font-size: 8px;
+
+        letter-spacing: 2px;
+    }
+
+
+    /* ---------------------------------------------
+       MAIN TEXT
+    --------------------------------------------- */
+
+    .intro-content {
+        max-width: 100%;
+    }
+
+
+    .intro-content h1 {
+        font-size:
+            clamp(50px, 14vw, 75px);
+
+        line-height: 0.84;
+
+        letter-spacing: -2px;
+    }
+
+
+    .intro-content h1 span {
+        margin-left: 8vw;
+    }
+
+
+    .intro-content p {
+        margin-top: 28px;
+
+        margin-left: 8vw;
+
+        max-width: 280px;
+
+        font-size: 11px;
+
+        line-height: 1.7;
+    }
+
+
+    /* ---------------------------------------------
+       SLIDER DOTS
+    --------------------------------------------- */
+
+    .intro-bottom {
+        gap: 14px;
+    }
+
+
+    .slider-dots {
+        gap: 8px;
+    }
+
+
+    .slider-dot {
+        width: 5px;
+
+        height: 5px;
+    }
+
+
+    .slider-dot.active {
+        width: 20px;
+    }
+
+
+    .intro-number {
+        font-size: 8px;
+
+        letter-spacing: 2px;
+    }
+
+
+    /* ---------------------------------------------
+       RIGHT PANEL
+    --------------------------------------------- */
+
+    .login-panel {
+        padding:
+            65px 25px 55px;
+    }
+
+
+    /* ---------------------------------------------
+       LOGIN HEADER
+    --------------------------------------------- */
+
+    .login-header {
+        margin-bottom: 38px;
+    }
+
+
+    .form-label {
+        margin-bottom: 14px;
+
+        font-size: 8px;
+
+        letter-spacing: 2.5px;
+    }
+
+
+    .login-header h2 {
+        font-size:
+            clamp(45px, 13vw, 65px);
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .login-header p {
+        margin-top: 16px;
+
+        font-size: 11px;
+    }
+
+
+    /* ---------------------------------------------
+       FORM
+    --------------------------------------------- */
+
+    .form-group {
+        margin-bottom: 25px;
+    }
+
+
+    .form-group label {
+        font-size: 8px;
+
+        letter-spacing: 1.8px;
+    }
+
+
+    .form-group input {
+        padding: 13px 0;
+
+        font-size: 13px;
+    }
+
+
+    /* ---------------------------------------------
+       OPTIONS
+    --------------------------------------------- */
+
+    .form-options {
+        margin-bottom: 30px;
+
+        font-size: 9px;
+    }
+
+
+    /* ---------------------------------------------
+       LOGIN BUTTON
+    --------------------------------------------- */
+
+    .login-button {
+        min-height: 60px;
+
+        padding:
+            16px 50px;
+    }
+
+
+    .login-button-text {
+        font-size: 9px;
+
+        letter-spacing: 1.7px;
+    }
+
+
+    .login-button-arrow {
+        right: 18px;
+
+        font-size: 16px;
+    }
+
+
+    /* ---------------------------------------------
+       SIGNUP
+    --------------------------------------------- */
+
+    .signup-prompt {
+        margin-top: 30px;
+
+        padding-top: 22px;
+
+        font-size: 9px;
+    }
+
+
+    .signup-prompt a {
+        letter-spacing: 1.2px;
+    }
+
+
+    /* ---------------------------------------------
+       RESET MODAL
+    --------------------------------------------- */
+
+    .reset-modal {
+        padding: 20px;
+    }
+
+
+    .reset-modal-box {
+        padding: 38px 25px;
+    }
+
+
+    .reset-modal-box h3 {
+        font-size:
+            clamp(43px, 12vw, 58px);
+    }
+
+
+    .reset-description {
+        font-size: 11px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .reset-close {
+        top: 15px;
+
+        right: 16px;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .login-intro {
+        min-height: 560px;
+
+        height: 70vh;
+    }
+
+
+    .intro-content h1 {
+        font-size: 48px;
+    }
+
+
+    .intro-content p {
+        font-size: 10px;
+
+        max-width: 240px;
+    }
+
+
+    .login-panel {
+        padding:
+            55px 20px 45px;
+    }
+
+
+    .login-header h2 {
+        font-size: 43px;
+    }
+
+
+    .form-options {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 14px;
+    }
+
+
+    .signup-prompt {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+}

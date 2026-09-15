@@ -1,0 +1,805 @@
+/* =====================================================
+   ARCHIVIO
+   DISCOVER PAGE — RESPONSIVE
+===================================================== */
+
+
+@media (max-width: 1100px) {
+
+    .discover-nav {
+        padding: 0 4vw;
+    }
+
+
+    .discover-hero {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+
+    .hero-copy h1 {
+        font-size:
+            clamp(70px, 11vw, 125px);
+    }
+
+
+    .category-section,
+    .for-you-section,
+    .catalogue-section,
+    .moods-section,
+    .people-section,
+    .surprise-section {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+
+    .featured-card {
+        grid-template-columns:
+            .85fr 1.15fr;
+    }
+
+
+    .featured-info {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+
+    .mood-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .catalogue-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        row-gap: 50px;
+    }
+
+
+    .people-section {
+        gap: 6vw;
+    }
+
+}
+
+
+
+@media (max-width: 800px) {
+
+    .discover-nav {
+        min-height: 72px;
+
+        grid-template-columns:
+            1fr auto;
+    }
+
+
+    .nav-center {
+        display: none;
+    }
+
+
+    .nav-actions {
+        gap: 16px;
+    }
+
+
+    .discover-hero {
+        min-height: 70vh;
+
+        padding-top: 12vh;
+        padding-bottom: 12vh;
+    }
+
+
+    .discover-hero::before {
+        font-size: 30vw;
+    }
+
+
+    .hero-copy h1 {
+        font-size:
+            clamp(65px, 14vw, 110px);
+
+        letter-spacing: -3px;
+    }
+
+
+    .hero-description {
+        margin-left: 8vw;
+
+        margin-top: 35px;
+    }
+
+
+    .hero-side-note {
+        display: none;
+    }
+
+
+    .category-section {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .section-heading-row {
+
+        align-items: start;
+
+        flex-direction: column;
+
+    }
+
+
+    .featured-card {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .featured-image {
+
+        height: 500px;
+
+    }
+
+
+    .featured-info {
+
+        min-height: 570px;
+
+        padding:
+            55px 8vw;
+
+    }
+
+
+    .featured-info h3 {
+
+        font-size:
+            clamp(70px, 15vw, 105px);
+
+    }
+
+
+    .mood-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .mood-card {
+
+        min-height: 330px;
+
+    }
+
+
+    .people-section {
+
+        grid-template-columns: 1fr;
+
+        gap: 70px;
+
+    }
+
+
+    footer {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .footer-links,
+    .footer-number {
+
+        justify-self: start;
+
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .discover-nav {
+
+        padding: 0 6vw;
+
+    }
+
+
+    .brand span {
+
+        display: none;
+
+    }
+
+
+    .brand img {
+
+        width: 36px;
+
+    }
+
+
+    .nav-actions a:first-child {
+
+        display: none;
+
+    }
+
+
+    .nav-actions {
+
+        font-size: 7px;
+
+    }
+
+
+    .discover-hero {
+
+        min-height: 650px;
+
+        padding:
+            90px 7vw 70px;
+
+    }
+
+
+    .hero-index {
+
+        top: 25px;
+
+        left: 7vw;
+
+    }
+
+
+    .hero-copy h1 {
+
+        font-size:
+            clamp(58px, 16vw, 90px);
+
+        line-height: .82;
+
+    }
+
+
+    .hero-description {
+
+        margin-left: 5vw;
+
+        max-width: 285px;
+
+        font-size: 10px;
+
+        line-height: 1.75;
+
+    }
+
+
+    .category-section,
+    .for-you-section,
+    .catalogue-section,
+    .moods-section,
+    .people-section,
+    .surprise-section {
+
+        padding-left: 7vw;
+
+        padding-right: 7vw;
+
+    }
+
+
+    .category-section {
+
+        padding-top: 25px;
+
+        padding-bottom: 25px;
+
+    }
+
+
+    .category-list {
+
+        gap: 6px;
+
+    }
+
+
+    .category-button {
+
+        padding:
+            10px 13px;
+
+        font-size: 6px;
+
+    }
+
+
+    .for-you-section,
+    .catalogue-section {
+
+        padding-top: 85px;
+
+        padding-bottom: 85px;
+
+    }
+
+
+    .section-heading-row h2 {
+
+        font-size:
+            clamp(54px, 15vw, 78px);
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .featured-image {
+
+        height: 420px;
+
+    }
+
+
+    .featured-info {
+
+        min-height: auto;
+
+        padding:
+            45px 7vw 55px;
+
+    }
+
+
+    .featured-meta {
+
+        flex-wrap: wrap;
+
+        gap: 10px 15px;
+
+    }
+
+
+    .featured-info h3 {
+
+        margin-top: 27px;
+
+        font-size:
+            clamp(65px, 18vw, 90px);
+
+    }
+
+
+    .recommendation-reason {
+
+        margin-top: 30px;
+
+        font-size: 10px;
+
+    }
+
+
+    .featured-actions {
+
+        align-items: stretch;
+
+        flex-direction: column;
+
+        gap: 18px;
+
+    }
+
+
+    .primary-action {
+
+        width: 100%;
+
+    }
+
+
+    .secondary-action {
+
+        align-self: flex-start;
+
+    }
+
+
+    .moods-section {
+
+        padding-top: 70px;
+
+        padding-bottom: 85px;
+
+    }
+
+
+    .mood-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        margin-top: 35px;
+
+    }
+
+
+    .mood-card {
+
+        min-height: 250px;
+
+    }
+
+
+    .mood-title {
+
+        font-size: 34px;
+
+    }
+
+
+    .catalogue-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 28px 12px;
+
+    }
+
+
+    .catalogue-image {
+
+        height: 260px;
+
+    }
+
+
+    .catalogue-details h3 {
+
+        font-size: 25px;
+
+    }
+
+
+    .people-section {
+
+        padding-top: 85px;
+
+        padding-bottom: 85px;
+
+    }
+
+
+    .people-intro h2 {
+
+        font-size:
+            clamp(58px, 16vw, 85px);
+
+    }
+
+
+    .person-card {
+
+        grid-template-columns:
+            48px 1fr;
+
+        gap: 15px;
+
+        padding: 20px 0;
+
+    }
+
+
+    .person-avatar {
+
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 20px;
+
+    }
+
+
+    .person-info h3 {
+
+        font-size: 23px;
+
+    }
+
+
+    .person-match {
+
+        grid-column: 2;
+
+        margin-top: -10px;
+
+    }
+
+
+    .surprise-section {
+
+        padding-top: 100px;
+
+        padding-bottom: 100px;
+
+    }
+
+
+    .surprise-inner h2 {
+
+        font-size:
+            clamp(58px, 16vw, 85px);
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .surprise-big-button {
+
+        width: 100%;
+
+        min-width: 0;
+
+    }
+
+
+    footer {
+
+        padding:
+            28px 7vw;
+
+    }
+
+}
+
+
+
+@media (max-width: 380px) {
+
+    .nav-actions {
+
+        gap: 10px;
+
+    }
+
+
+    .discover-hero {
+
+        min-height: 570px;
+
+    }
+
+
+    .hero-copy h1 {
+
+        font-size: 55px;
+
+    }
+
+
+    .category-list {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+
+    .category-button {
+
+        padding:
+            10px 5px;
+
+    }
+
+
+    .catalogue-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .catalogue-image {
+
+        height: 390px;
+
+    }
+
+
+    .featured-info h3 {
+
+        font-size: 63px;
+
+    }
+
+}
+
+/* =====================================================
+   SUGGESTIONS RESPONSIVE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .suggestions-section {
+        padding: 70px 6vw 80px;
+    }
+
+    .suggestions-header h2 {
+        font-size: 48px;
+    }
+
+    .suggestion-row {
+        gap: 28px;
+    }
+
+    .suggestion-person {
+        flex-basis: 100px;
+    }
+
+    .suggestion-avatar,
+    .club-avatar {
+        width: 72px;
+        height: 72px;
+    }
+
+    .profile-modal {
+        padding: 20px;
+    }
+
+    .profile-modal-box {
+        padding: 50px 30px 35px;
+    }
+
+    .modal-profile-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .modal-profile-left {
+        align-items: center;
+    }
+
+    .modal-profile-bio {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modal-profile-stats {
+        justify-content: center;
+    }
+
+    .modal-profile-note {
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .suggestions-header h2 {
+        font-size: 42px;
+    }
+
+    .suggestion-row {
+        gap: 22px;
+    }
+
+    .suggestion-person {
+        flex-basis: 92px;
+    }
+
+    .suggestion-avatar,
+    .club-avatar {
+        width: 68px;
+        height: 68px;
+    }
+
+    .suggestion-username {
+        font-size: 7px;
+    }
+
+    .suggestion-action {
+        font-size: 5.5px;
+        min-width: 65px;
+        padding: 7px 9px;
+    }
+
+    .profile-modal-box {
+        padding: 50px 20px 30px;
+    }
+
+    .modal-profile-avatar {
+        width: 115px;
+        height: 115px;
+        font-size: 48px;
+    }
+
+    .modal-follow-button {
+        width: 115px;
+    }
+
+    .modal-profile-stats {
+        gap: 18px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .suggestion-row {
+        justify-content: flex-start;
+        gap: 28px;
+    }
+
+    .suggestion-person {
+        flex: 0 0 100px;
+    }
+
+    .suggestion-club {
+        flex: 0 0 145px;
+    }
+
+}
+
+/* =====================================================
+   MOOD GRID RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .mood-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .mood-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+    }
+
+
+    .mood-card {
+
+        height: 360px;
+
+    }
+
+}

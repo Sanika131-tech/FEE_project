@@ -1,0 +1,736 @@
+/* =====================================================
+   ARCHIVIO
+   LANDING PAGE — RESPONSIVE STYLES
+===================================================== */
+
+/* =====================================================
+   Laptop Fix
+===================================================== */
+
+@media (max-width: 1400px) {
+
+    .hero-title {
+        margin-top: 30px;
+    }
+
+}
+
+/* =====================================================
+   TABLETS
+   1200px and below
+===================================================== */
+
+@media (max-width: 1200px) {
+
+    /* ---------- HERO ---------- */
+
+    .hero-title {
+        width: 600px;
+    }
+
+    .hero-title h1 {
+        font-size: 115px;
+    }
+
+    .hero-word {
+        font-size: 24vw;
+    }
+
+
+    /* ---------- FLOATING OBJECTS ---------- */
+
+    .object-book {
+        left: 4%;
+        transform: rotate(-12deg) scale(.85);
+    }
+
+    .object-film {
+        right: 4%;
+        transform: rotate(9deg) scale(.85);
+    }
+
+    .object-music {
+        left: 15%;
+        transform: rotate(7deg) scale(.85);
+    }
+
+    .object-note {
+        right: 7%;
+        transform: rotate(-7deg) scale(.85);
+    }
+
+
+    /* ---------- STATEMENT ---------- */
+
+    .statement-content h2 {
+        font-size: 90px;
+    }
+
+
+    /* ---------- ARCHIVE ---------- */
+
+    .experience-heading h2 {
+        font-size: 105px;
+    }
+
+    .archive-card {
+        min-height: 530px;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+   900px and below
+===================================================== */
+
+@media (max-width: 900px) {
+
+    /* ---------- NAVIGATION ---------- */
+
+    header {
+        top: 15px;
+        padding: 0 18px;
+    }
+
+    .nav-center {
+        display: none;
+    }
+
+    .navbar {
+        padding: 11px 12px 11px 20px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height: 900px;
+
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .hero-title {
+        width: 90%;
+
+        margin-top: -40px;
+    }
+
+    .hero-title h1 {
+        font-size: clamp(75px, 12vw, 110px);
+        letter-spacing: -6px;
+    }
+
+    .hero-copy {
+        max-width: 330px;
+    }
+
+
+    /* ---------- HERO OBJECTS ---------- */
+
+    .object-book {
+        left: -2%;
+        top: 18%;
+
+        transform: rotate(-12deg) scale(.65);
+    }
+
+    .object-film {
+        right: -2%;
+        top: 17%;
+
+        transform: rotate(9deg) scale(.65);
+    }
+
+    .object-music {
+        left: 8%;
+        bottom: 3%;
+
+        transform: rotate(7deg) scale(.65);
+    }
+
+    .object-note {
+        right: 3%;
+        bottom: 4%;
+
+        transform: rotate(-7deg) scale(.65);
+    }
+
+    .object-star {
+        top: 13%;
+        left: 50%;
+    }
+
+
+    /* ---------- STATEMENT ---------- */
+
+    .statement {
+        padding: 120px 7vw;
+    }
+
+    .statement-content h2 {
+        font-size: clamp(55px, 9vw, 85px);
+        letter-spacing: -4px;
+    }
+
+    .second-line {
+        margin-left: 8vw;
+    }
+
+    .statement-description {
+        margin-left: 45%;
+    }
+
+
+    /* ---------- ARCHIVE EXPERIENCE ---------- */
+
+    .archive-experience {
+        padding: 120px 6vw;
+    }
+
+    .experience-heading {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 35px;
+    }
+
+    .experience-heading h2 {
+        font-size: clamp(65px, 11vw, 100px);
+    }
+
+    .experience-heading p {
+        max-width: 350px;
+    }
+
+
+    /* ---------- ARCHIVE CARDS ---------- */
+
+    .archive-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 15px;
+    }
+
+    .archive-card {
+        min-height: 500px;
+    }
+
+    .archive-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+
+    /* ---------- MEMORY ---------- */
+
+    .memory-section {
+        padding: 120px 7vw;
+    }
+
+    .memory-layout {
+        grid-template-columns: 1fr;
+
+        gap: 80px;
+    }
+
+    .memory-text {
+        max-width: 650px;
+    }
+
+    .memory-text h2 {
+        font-size: clamp(65px, 10vw, 100px);
+    }
+
+    .memory-card {
+        max-width: 600px;
+
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* ---------- DISCOVER ---------- */
+
+    .discover-section {
+        padding: 120px 7vw;
+    }
+
+    .discover-section > h2 {
+        font-size: clamp(75px, 12vw, 120px);
+    }
+
+    .recommendation {
+        grid-template-columns: 1fr;
+
+        max-width: 700px;
+    }
+
+    .recommendation-image {
+        min-height: 500px;
+    }
+
+    .recommendation-info {
+        padding: 60px 20px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        padding: 30px 6vw;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   600px and below
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* ---------- GLOBAL ---------- */
+
+    body {
+        width: 100%;
+    }
+
+
+    /* ---------- NAVIGATION ---------- */
+
+    header {
+        top: 10px;
+
+        padding: 0 10px;
+    }
+
+    .navbar {
+        width: 100%;
+
+        padding: 10px 10px 10px 16px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-right {
+        gap: 8px;
+    }
+
+    .nav-right > a:first-child {
+        display: none;
+    }
+
+    .nav-enter {
+        padding: 9px 14px;
+    }
+
+
+    /* ---------- CURSOR ---------- */
+
+    /*
+       Phones don't have a normal mouse,
+       so hide our custom cursor.
+    */
+
+    .cursor {
+        display: none;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        height: 100svh;
+
+        min-height: 700px;
+
+        padding: 100px 20px 40px;
+
+        align-items: center;
+    }
+
+    .hero-title {
+        width: 100%;
+
+        margin-top: 0;
+
+        z-index: 30;
+    }
+
+    .eyebrow {
+        font-size: 8px;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 22px;
+    }
+
+    .hero-title h1 {
+        font-size: clamp(55px, 17vw, 85px);
+
+        line-height: .85;
+
+        letter-spacing: -4px;
+    }
+
+    .hero-copy {
+        max-width: 270px;
+
+        margin: 25px auto;
+
+        font-size: 13px;
+    }
+
+    .magnetic-button {
+        padding: 14px 18px;
+
+        gap: 18px;
+
+        font-size: 8px;
+    }
+
+
+    /* ---------- BACKGROUND WORDS ---------- */
+
+    .hero-word {
+        font-size: 36vw;
+    }
+
+    .hero-word-one {
+        top: 25%;
+        left: -15%;
+    }
+
+    .hero-word-two {
+        bottom: 18%;
+        right: -25%;
+    }
+
+
+    /* ---------- FLOATING OBJECTS ---------- */
+
+    .object-book {
+        left: -27%;
+        top: 13%;
+
+        transform: rotate(-12deg) scale(.48);
+
+        opacity: .9;
+    }
+
+    .object-film {
+        right: -27%;
+        top: 14%;
+
+        transform: rotate(9deg) scale(.48);
+
+        opacity: .9;
+    }
+
+    .object-music {
+        left: -15%;
+        bottom: 1%;
+
+        transform: rotate(7deg) scale(.45);
+
+        opacity: .9;
+    }
+
+    .object-note {
+        right: -18%;
+        bottom: 2%;
+
+        transform: rotate(-7deg) scale(.45);
+
+        opacity: .9;
+    }
+
+    .object-star {
+        top: 12%;
+        left: 47%;
+
+        font-size: 25px;
+    }
+
+
+    /* ---------- SCROLL INDICATOR ---------- */
+
+    .scroll-indicator {
+        bottom: 12px;
+
+        font-size: 7px;
+    }
+
+    .scroll-indicator div {
+        height: 30px;
+    }
+
+
+    /* ---------- STATEMENT ---------- */
+
+    .statement {
+        min-height: 100svh;
+
+        padding: 100px 25px;
+    }
+
+    .section-label {
+        font-size: 8px;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 50px;
+    }
+
+    .statement-content h2 {
+        font-size: clamp(48px, 14vw, 70px);
+
+        letter-spacing: -3px;
+
+        line-height: .9;
+    }
+
+    .second-line {
+        margin-left: 0;
+
+        margin-top: 25px;
+    }
+
+    .statement-description {
+        width: auto;
+
+        margin: 55px 0 0;
+
+        max-width: 310px;
+
+        font-size: 13px;
+    }
+
+
+    /* ---------- ARCHIVE EXPERIENCE ---------- */
+
+    .archive-experience {
+        padding: 100px 20px;
+    }
+
+    .experience-heading {
+        margin-bottom: 70px;
+    }
+
+    .experience-heading h2 {
+        font-size: clamp(55px, 15vw, 80px);
+
+        letter-spacing: -4px;
+    }
+
+    .experience-heading p {
+        font-size: 12px;
+
+        max-width: 280px;
+    }
+
+
+    /* ---------- MARQUEE ---------- */
+
+    .marquee {
+        margin-left: -10%;
+
+        width: 120%;
+
+        padding: 14px 0;
+    }
+
+    .marquee-track span {
+        font-size: 30px;
+
+        margin-right: 30px;
+    }
+
+
+    /* ---------- ARCHIVE GRID ---------- */
+
+    .archive-grid {
+        grid-template-columns: 1fr;
+
+        margin-top: 80px;
+    }
+
+    .archive-card,
+    .archive-card:last-child {
+        grid-column: auto;
+
+        min-height: 520px;
+    }
+
+    .archive-card h3 {
+        font-size: 32px;
+    }
+
+
+    /* ---------- MEMORY ---------- */
+
+    .memory-section {
+        min-height: auto;
+
+        padding: 110px 25px;
+    }
+
+    .memory-background-word {
+        font-size: 45vw;
+
+        top: 35%;
+    }
+
+    .memory-text h2 {
+        font-size: clamp(55px, 15vw, 80px);
+
+        letter-spacing: -4px;
+    }
+
+    .memory-text > p:last-child {
+        margin-top: 35px;
+
+        font-size: 13px;
+    }
+
+    .memory-layout {
+        gap: 60px;
+    }
+
+    .memory-card {
+        min-height: 350px;
+
+        padding: 20px;
+    }
+
+    .memory-card-content {
+        height: 250px;
+    }
+
+    .memory-card-content p {
+        font-size: 23px;
+
+        max-width: 280px;
+    }
+
+
+    /* ---------- DISCOVER ---------- */
+
+    .discover-section {
+        padding: 100px 20px;
+    }
+
+    .discover-section > h2 {
+        font-size: clamp(60px, 17vw, 90px);
+
+        letter-spacing: -5px;
+
+        margin-bottom: 70px;
+    }
+
+    .recommendation-image {
+        min-height: 400px;
+
+        padding: 25px;
+    }
+
+    .recommendation-image strong {
+        font-size: 38px;
+    }
+
+    .recommendation-info {
+        padding: 45px 5px;
+    }
+
+    .recommendation-info h3 {
+        font-size: 38px;
+    }
+
+    .recommendation-small {
+        font-size: 12px;
+    }
+
+
+    /* ---------- FINAL SECTION ---------- */
+
+    .final-section {
+        min-height: 80svh;
+    }
+
+    .final-word {
+        font-size: 42vw;
+    }
+
+    .final-content > p {
+        font-size: 8px;
+
+        letter-spacing: 3px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        padding: 25px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+   400px and below
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .hero-title h1 {
+        font-size: 55px;
+    }
+
+    .hero-copy {
+        font-size: 12px;
+    }
+
+    .object-book {
+        left: -35%;
+    }
+
+    .object-film {
+        right: -35%;
+    }
+
+    .object-music {
+        left: -25%;
+    }
+
+    .object-note {
+        right: -28%;
+    }
+
+    .statement-content h2 {
+        font-size: 48px;
+    }
+
+    .experience-heading h2 {
+        font-size: 55px;
+    }
+
+    .archive-card {
+        min-height: 480px;
+    }
+
+}

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Profile — Archivio</title>
+
+
+    <!-- FAVICON -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="../assets/branding/archivio-favicon.png"
+    >
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- PROFILE CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../css/app/profile.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/app/profile-responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         PAGE LOADER
+    ================================================== -->
+
+    <div
+        class="profile-loader"
+        id="profileLoader"
+    >
+
+        <img
+            src="../assets/branding/archivio-logo.png"
+            alt="Archivio"
+        >
+
+        <p>
+            OPENING YOUR COLLECTION...
+        </p>
+
+    </div>
+
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <header class="profile-nav">
+
+
+        <!-- BRAND -->
+
+        <a
+            href="../index.html"
+            class="profile-brand"
+        >
+
+            <img
+                src="../assets/branding/archivio-logo.png"
+                alt="Archivio logo"
+            >
+
+            <span>
+                ARCHIVIO
+            </span>
+
+        </a>
+
+
+        <!-- RIGHT NAV -->
+
+        <div class="profile-right-nav">
+
+            <nav class="profile-nav-links">
+
+                <a href="discover.html">
+                    DISCOVER
+                </a>
+
+                <a href="archive.html">
+                    ARCHIVE
+                </a>
+
+                <a
+                    href="profile.html"
+                    class="active"
+                >
+                    PROFILE
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         MAIN
+    ================================================== -->
+
+    <main>
+
+
+
+        <!-- =================================================
+             PROFILE HERO
+        ================================================== -->
+
+        <section class="profile-hero">
+
+
+            <div class="profile-hero-number">
+                PERSONAL COLLECTION / 005
+            </div>
+
+
+            <!-- PROFILE IDENTITY -->
+
+            <div class="profile-identity">
+
+
+                <div class="profile-avatar-large">
+
+                    <span id="profileInitial">
+                        A
+                    </span>
+
+                </div>
+
+
+                <div class="profile-identity-text">
+
+                    <p class="eyebrow">
+                        THIS IS YOUR ARCHIVE
+                    </p>
+
+
+                    <h1 id="profileName">
+                        Anishka
+                    </h1>
+
+
+                    <p
+                        class="profile-handle"
+                        id="profileHandle"
+                    >
+                        @anishka
+                    </p>
+
+
+                    <p class="profile-bio">
+                        Collecting the things
+                        that stayed with me.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE STATS -->
+
+            <div class="profile-stats">
+
+
+                <div class="profile-stat">
+
+                    <strong id="profileArchiveCount">
+                        0
+                    </strong>
+
+                    <span>
+                        ARCHIVED
+                    </span>
+
+                </div>
+
+
+                <div class="profile-stat">
+
+                    <strong id="profileCollectionCount">
+                        0
+                    </strong>
+
+                    <span>
+                        COLLECTIONS
+                    </span>
+
+                </div>
+
+
+                <div class="profile-stat">
+
+                    <strong id="profileReviewCount">
+                        0
+                    </strong>
+
+                    <span>
+                        REVIEWS
+                    </span>
+
+                </div>
+
+
+                <div class="profile-stat">
+
+                    <strong id="profileFollowingCount">
+                        0
+                    </strong>
+
+                    <span>
+                        FOLLOWING
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             YOUR ARCHIVE
+        ================================================== -->
+
+        <section class="profile-archive-section">
+
+
+            <div class="section-label">
+
+                <span>
+                    01
+                </span>
+
+                YOUR ARCHIVE
+
+            </div>
+
+
+            <div class="profile-section-heading">
+
+                <h2>
+                    Things I've
+                    <em>kept.</em>
+                </h2>
+
+
+                <a
+                    href="archive.html"
+                    class="view-all"
+                >
+                    VIEW ARCHIVE
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+
+            <!-- FILTERS -->
+
+            <div class="profile-filters">
+
+                <button
+                    class="profile-filter active"
+                    data-filter="all"
+                >
+                    ALL
+                </button>
+
+                <button
+                    class="profile-filter"
+                    data-filter="movie"
+                >
+                    MOVIES
+                </button>
+
+                <button
+                    class="profile-filter"
+                    data-filter="book"
+                >
+                    BOOKS
+                </button>
+
+                <button
+                    class="profile-filter"
+                    data-filter="music"
+                >
+                    MUSIC
+                </button>
+
+            </div>
+
+
+            <!-- ARCHIVE GRID -->
+
+            <div
+                class="profile-archive-grid"
+                id="profileArchiveGrid"
+            >
+
+                <!-- JavaScript generates cards -->
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             COLLECTIONS
+        ================================================== -->
+
+        <section class="profile-collections-section">
+
+
+            <div class="section-label">
+
+                <span>
+                    02
+                </span>
+
+                COLLECTIONS
+
+            </div>
+
+
+            <div class="profile-section-heading">
+
+                <h2>
+                    Give your favourites
+                    <em>a world.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="profile-collection-grid">
+
+
+                <!-- COLLECTION 01 -->
+
+                <article class="profile-collection-card image">
+
+    <img
+        src="../assets/landing/ShawnMendes.jpeg"
+        alt="Shawn Mendes"
+    >
+
+    <div class="collection-image-overlay"></div>
+
+    <span class="collection-number">
+        01
+    </span>
+
+    <div>
+        <p>MOOD / 001</p>
+
+        <h3>
+            Rainy
+            <em>Evenings.</em>
+        </h3>
+    </div>
+
+    <span class="collection-arrow">
+        ↗
+    </span>
+
+</article>
+
+
+
+                <!-- COLLECTION 02 -->
+
+                <article class="profile-collection-card image">
+
+    <img
+        src="../assets/landing/interstellar.jpeg"
+        alt="Interstellar"
+    >
+
+    <div class="collection-image-overlay"></div>
+
+    <span class="collection-number">
+        02
+    </span>
+
+    <div>
+        <p>MEMORY / 002</p>
+
+        <h3>
+            Things That
+            <em>Changed Me.</em>
+        </h3>
+    </div>
+
+    <span class="collection-arrow">
+        ↗
+    </span>
+
+</article>
+
+
+
+                <!-- COLLECTION 03 -->
+
+                <article
+                    class="profile-collection-card image"
+                >
+
+                    <img
+                        src="../assets/landing/night-circus.jpeg"
+                        alt="The Night Circus"
+                    >
+
+
+                    <div class="collection-image-overlay"></div>
+
+
+                    <span class="collection-number">
+                        03
+                    </span>
+
+
+                    <div>
+
+                        <p>
+                            COMFORT / 003
+                        </p>
+
+                        <h3>
+                            Comfort
+                            <em>Archive.</em>
+                        </h3>
+
+                    </div>
+
+
+                    <span class="collection-arrow">
+                        ↗
+                    </span>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TASTE PROFILE
+        ================================================== -->
+
+        <section class="taste-section">
+
+
+            <div class="section-label">
+
+                <span>
+                    03
+                </span>
+
+                TASTE PROFILE
+
+            </div>
+
+
+            <div class="taste-layout">
+
+
+                <div class="taste-intro">
+
+                    <p class="eyebrow">
+                        WHAT YOUR ARCHIVE SAYS
+                    </p>
+
+
+                    <h2>
+                        A map of
+                        <br>
+                        <em>your taste.</em>
+                    </h2>
+
+
+                    <p>
+                        Your archive slowly becomes
+                        a portrait of the things you
+                        return to, remember and love.
+                    </p>
+
+                </div>
+
+
+
+                <div class="taste-list">
+
+
+                    <div class="taste-item">
+
+                        <div class="taste-info">
+
+                            <span>
+                                01
+                            </span>
+
+                            <strong>
+                                SCIENCE FICTION
+                            </strong>
+
+                        </div>
+
+
+                        <div class="taste-bar">
+
+                            <div
+                                class="taste-progress"
+                                style="width:92%"
+                            ></div>
+
+                        </div>
+
+
+                        <strong class="taste-percent">
+                            92%
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="taste-item">
+
+                        <div class="taste-info">
+
+                            <span>
+                                02
+                            </span>
+
+                            <strong>
+                                LITERARY FICTION
+                            </strong>
+
+                        </div>
+
+
+                        <div class="taste-bar">
+
+                            <div
+                                class="taste-progress"
+                                style="width:78%"
+                            ></div>
+
+                        </div>
+
+
+                        <strong class="taste-percent">
+                            78%
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="taste-item">
+
+                        <div class="taste-info">
+
+                            <span>
+                                03
+                            </span>
+
+                            <strong>
+                                EMOTIONAL STORIES
+                            </strong>
+
+                        </div>
+
+
+                        <div class="taste-bar">
+
+                            <div
+                                class="taste-progress"
+                                style="width:84%"
+                            ></div>
+
+                        </div>
+
+
+                        <strong class="taste-percent">
+                            84%
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="taste-item">
+
+                        <div class="taste-info">
+
+                            <span>
+                                04
+                            </span>
+
+                            <strong>
+                                HIP-HOP
+                            </strong>
+
+                        </div>
+
+
+                        <div class="taste-bar">
+
+                            <div
+                                class="taste-progress"
+                                style="width:64%"
+                            ></div>
+
+                        </div>
+
+
+                        <strong class="taste-percent">
+                            64%
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             YEAR IN ARCHIVIO
+        ================================================== -->
+
+        <section class="year-section">
+
+
+            <div class="year-background">
+                2026
+            </div>
+
+
+            <div class="section-label">
+
+                <span>
+                    04
+                </span>
+
+                YOUR YEAR
+
+            </div>
+
+
+            <div class="year-content">
+
+                <p class="eyebrow">
+                    ARCHIVIO / 2026
+                </p>
+
+
+                <h2>
+                    A year of
+                    <br>
+                    <em>things worth keeping.</em>
+                </h2>
+
+
+                <p>
+                    Every film watched, every page
+                    turned and every song remembered
+                    leaves a trace.
+                </p>
+
+
+                <button
+                    class="year-button"
+                    id="yearButton"
+                    type="button"
+                >
+                    VIEW YOUR YEAR
+                    <span>↗</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="profile-footer">
+
+
+        <div>
+
+            <img
+                src="../assets/branding/archivio-logo.png"
+                alt="Archivio"
+            >
+
+            <span>
+                ARCHIVIO
+            </span>
+
+        </div>
+
+
+        <p>
+            EVERY FAVOURITE LEAVES A TRACE.
+        </p>
+
+
+        <span>
+            COLLECTION / 005
+        </span>
+
+
+    </footer>
+
+
+
+    <!-- PROFILE JS -->
+
+    <script
+        src="../js/profile.js"
+    ></script>
+
+
+</body>
+
+</html>

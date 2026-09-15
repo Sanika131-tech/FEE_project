@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Archivio — discover films, books, music, people and clubs worth keeping."
+    >
+
+    <title>Discover — Archivio</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="../assets/branding/archivio-favicon.png"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/app/discover.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/app/discover-responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div
+        class="page-loader"
+        id="pageLoader"
+    >
+
+        <div class="loader-mark">
+
+            <img
+                src="../assets/branding/archivio-logo.png"
+                alt="Archivio"
+            >
+
+        </div>
+
+        <p>
+            OPENING THE DISCOVERY ROOM
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         TOP NAVIGATION
+    ====================================================== -->
+
+    <header class="discover-nav">
+
+
+        <a
+            href="../index.html"
+            class="brand"
+        >
+
+            <img
+                src="../assets/branding/archivio-logo.png"
+                alt="Archivio"
+            >
+
+            <span>
+                ARCHIVIO / PRIVATE COLLECTION
+            </span>
+
+        </a>
+
+
+
+        <div class="nav-center">
+
+            <span class="nav-number">
+                02
+            </span>
+
+            <span>
+                DISCOVER
+            </span>
+
+        </div>
+
+
+
+       <div class="nav-actions">
+
+    <!-- SEARCH -->
+
+    <div class="nav-search">
+
+        <span class="search-icon">⌕</span>
+
+        <input
+            type="text"
+            id="navSearch"
+            placeholder="Search"
+            autocomplete="off"
+        >
+
+    </div>
+
+
+    <!-- THEME -->
+
+    <button
+        class="theme-button"
+        id="themeButton"
+        type="button"
+        aria-label="Change theme"
+        title="Change theme"
+    >
+        <span class="theme-icon">
+            ◐
+        </span>
+    </button>
+
+
+    <!-- ARCHIVE -->
+
+    <a href="archive.html">
+        ARCHIVE
+    </a>
+
+
+    <!-- PROFILE -->
+
+    <a
+        href="profile.html"
+        class="profile-link"
+    >
+
+        <span class="profile-avatar">
+            A
+        </span>
+
+        <span id="navUserName">
+            ANISHKA
+        </span>
+
+    </a>
+
+</div>
+
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             DISCOVER HERO
+        ================================================== -->
+
+        <!-- =====================================================
+     DISCOVER HERO
+===================================================== -->
+
+<section class="discover-hero">
+
+    <!-- ================= MOVIE SLIDESHOW ================= -->
+
+    <div class="hero-slideshow">
+
+        <div class="hero-slide active">
+            <img
+                src="../assets/landing/it.jpeg"
+                alt="It"
+            >
+        </div>
+
+        <div class="hero-slide">
+            <img
+                src="../assets/landing/shatter.jpeg"
+                alt="Shatter"
+            >
+        </div>
+
+        <div class="hero-slide">
+            <img
+                src="../assets/landing/secret-history.jpeg"
+                alt="The Secret History"
+            >
+        </div>
+
+        <div class="hero-slide">
+            <img
+                src="../assets/landing/MichaelJackson.jpeg"
+                alt="Michael Jackson"
+            >
+        </div>
+
+        <div class="hero-slide">
+            <img
+                src="../assets/landing/HarryPotter.jpeg"
+                alt="Harry Potter"
+            >
+        </div>
+
+    </div>
+
+
+    <!-- DARK LAYER ABOVE IMAGES -->
+
+    <div class="hero-image-overlay"></div>
+
+
+    <!-- ================= HERO TEXT ================= -->
+
+
+    <div class="hero-copy">
+
+        <p class="eyebrow">
+            CURATED FOR YOUR TASTE
+        </p>
+
+        <h1>
+            Explore things
+            <br>
+            <em>worth keeping.</em>
+        </h1>
+
+        <p class="hero-description">
+            A living catalogue of films, books, music,
+            people and places your taste might lead you to.
+        </p>
+
+    </div>
+
+
+    <!-- ================= SLIDESHOW DOTS ================= -->
+
+    <div class="hero-slider-dots">
+
+        <button
+            class="hero-dot active"
+            data-slide="0"
+            aria-label="Show slide 1"
+        ></button>
+
+        <button
+            class="hero-dot"
+            data-slide="1"
+            aria-label="Show slide 2"
+        ></button>
+
+        <button
+            class="hero-dot"
+            data-slide="2"
+            aria-label="Show slide 3"
+        ></button>
+
+        <button
+            class="hero-dot"
+            data-slide="3"
+            aria-label="Show slide 4"
+        ></button>
+
+        <button
+            class="hero-dot"
+            data-slide="4"
+            aria-label="Show slide 5"
+        ></button>
+
+    </div>
+
+</section>
+
+
+
+        <!-- =================================================
+             FOR YOU
+        ================================================== -->
+
+        <section class="for-you-section">
+
+
+            <div class="section-heading-row">
+
+
+                <div>
+
+                    <p class="eyebrow">
+                        02 / FOR YOU
+                    </p>
+
+
+                    <h2>
+
+                        Something
+                        <br>
+
+                        <em>
+                            you might love.
+                        </em>
+
+                    </h2>
+
+                </div>
+
+
+
+                <button
+                    class="text-button"
+                    id="surpriseButton"
+                >
+
+                    SURPRISE ME
+
+                    <span>
+                        ↗
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+
+            <article class="featured-card">
+
+
+                <div class="featured-image">
+
+                    <img
+                        src="../assets/landing/project-hail-mary-poster.jpeg"
+                        alt="Project Hail Mary"
+                    >
+
+
+                    <div class="image-stamp">
+                        RECOMMENDATION / 001
+                    </div>
+
+                </div>
+
+
+
+                <div class="featured-info">
+
+
+                    <div class="featured-meta">
+
+                        <span>
+                            FILM / 2026
+                        </span>
+
+                        <span>
+                            SCIENCE FICTION
+                        </span>
+
+                    </div>
+
+
+
+                    <h3>
+
+                        Project
+                        <br>
+
+                        <em>
+                            Hail Mary
+                        </em>
+
+                    </h3>
+
+
+
+                    <p class="recommendation-reason">
+
+                        Because your archive keeps returning to
+                        emotional science fiction and stories about
+                        humanity.
+
+                    </p>
+
+
+
+                    <div
+                        class="why-box"
+                        id="whyBox"
+                    >
+
+                        <span>
+                            WHY THIS?
+                        </span>
+
+                        <p>
+
+                            You seem drawn to stories where enormous
+                            ideas are grounded in intimate human
+                            relationships.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="featured-actions">
+
+
+                        <button
+                            class="primary-action"
+                            data-save="Project Hail Mary"
+                        >
+
+                            ADD TO ARCHIVE
+
+                            <span>
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            class="secondary-action"
+                            id="whyButton"
+                        >
+
+                            TELL ME WHY
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             MOODS
+        ================================================== -->
+
+        <!-- =====================================================
+     BROWSE BY MOOD
+===================================================== -->
+
+<section class="moods-section">
+
+    <div class="section-label">
+        <span>03</span>
+        BROWSE BY MOOD
+    </div>
+
+
+    <div class="mood-grid">
+
+
+        <!-- ================= MOOD 01 ================= -->
+
+        <button class="mood-card mood-image">
+
+            <img
+                src="../assets/landing/Weeknd.jpeg"
+                alt="Weekend"
+            >
+
+            <span class="mood-overlay"></span>
+
+            <span class="mood-number">
+                01
+            </span>
+
+            <span class="mood-title">
+                RAINY<br>
+                EVENINGS
+            </span>
+
+            <span class="mood-arrow">
+                ↗
+            </span>
+
+        </button>
+
+
+        <!-- ================= MOOD 02 ================= -->
+
+        <button class="mood-card mood-image">
+
+            <img
+                src="../assets/landing/hnumanAnsh.jpeg"
+                alt="Hnuman Ansh"
+            >
+
+            <span class="mood-overlay"></span>
+
+            <span class="mood-number">
+                02
+            </span>
+
+            <span class="mood-title">
+                THINGS THAT<br>
+                CHANGED ME
+            </span>
+
+            <span class="mood-arrow">
+                ↗
+            </span>
+
+        </button>
+
+
+        <!-- ================= MOOD 03 ================= -->
+
+        <button class="mood-card mood-image">
+
+            <img
+                src="../assets/landing/project-hail-mary-poster.jpeg"
+                alt="Project Hail Mary"
+            >
+
+            <span class="mood-overlay"></span>
+
+            <span class="mood-number">
+                03
+            </span>
+
+            <span class="mood-title">
+                SOFT<br>
+                SCI-FI
+            </span>
+
+            <span class="mood-arrow">
+                ↗
+            </span>
+
+        </button>
+
+
+        <!-- ================= MOOD 04 ================= -->
+
+        <button class="mood-card mood-image">
+
+            <img
+                src="../assets/landing/avengers.jpeg"
+                alt="Avengers"
+            >
+
+            <span class="mood-overlay"></span>
+
+            <span class="mood-number">
+                04
+            </span>
+
+            <span class="mood-title">
+                AFTER<br>
+                MIDNIGHT
+            </span>
+
+            <span class="mood-arrow">
+                ↗
+            </span>
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+        <!-- =================================================
+             PEOPLE
+        ================================================== -->
+
+        <!-- =====================================================
+     PEOPLE YOU MIGHT LIKE
+===================================================== -->
+
+<section class="suggestions-section">
+
+    <div class="suggestions-header">
+        <div>
+            <p class="eyebrow">05 / PEOPLE YOU MIGHT LIKE</p>
+
+            <h2>
+                People with
+                <em>your taste.</em>
+            </h2>
+        </div>
+    </div>
+
+
+    <!-- ================= PEOPLE ROW ================= -->
+
+    <div class="suggestion-row" id="peopleSuggestions">
+
+        <button
+            class="suggestion-person"
+            data-person="jassleen"
+            type="button"
+        >
+
+            <span class="suggestion-avatar">
+                J
+            </span>
+
+            <span class="suggestion-username">
+                @jassleen
+            </span>
+
+            <span class="suggestion-action">
+                Follow
+            </span>
+
+        </button>
+
+
+        <button
+            class="suggestion-person"
+            data-person="sanika"
+            type="button"
+        >
+
+            <span class="suggestion-avatar">
+                S
+            </span>
+
+            <span class="suggestion-username">
+                @sanika
+            </span>
+
+            <span class="suggestion-action">
+                Follow
+            </span>
+
+        </button>
+
+
+        <button
+            class="suggestion-person"
+            data-person="archive004"
+            type="button"
+        >
+
+            <span class="suggestion-avatar">
+                A
+            </span>
+
+            <span class="suggestion-username">
+                @archive_004
+            </span>
+
+            <span class="suggestion-action">
+                Follow
+            </span>
+
+        </button>
+
+
+        <button
+            class="suggestion-person"
+            data-person="riya"
+            type="button"
+        >
+
+            <span class="suggestion-avatar">
+                R
+            </span>
+
+            <span class="suggestion-username">
+                @riya
+            </span>
+
+            <span class="suggestion-action">
+                Follow
+            </span>
+
+        </button>
+
+
+        <button
+            class="suggestion-person"
+            data-person="karan"
+            type="button"
+        >
+
+            <span class="suggestion-avatar">
+                K
+            </span>
+
+            <span class="suggestion-username">
+                @karan
+            </span>
+
+            <span class="suggestion-action">
+                Follow
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <!-- =================================================
+         CLUBS YOU MIGHT LIKE
+    ================================================== -->
+
+    <div class="clubs-suggestion-heading">
+
+        <p class="eyebrow">
+            CLUBS YOU MIGHT LIKE
+        </p>
+
+    </div>
+
+
+    <div class="suggestion-row club-row" id="clubSuggestions">
+
+        <button
+            class="suggestion-club"
+            data-club="midnight"
+            type="button"
+        >
+
+            <span class="club-avatar">
+                M
+            </span>
+
+            <span class="suggestion-username">
+                Midnight Screening
+            </span>
+
+            <span class="suggestion-action">
+                Join
+            </span>
+
+        </button>
+
+
+        <button
+            class="suggestion-club"
+            data-club="scifi"
+            type="button"
+        >
+
+            <span class="club-avatar">
+                S
+            </span>
+
+            <span class="suggestion-username">
+                Soft Sci-Fi Society
+            </span>
+
+            <span class="suggestion-action">
+                Join
+            </span>
+
+        </button>
+
+
+        <button
+            class="suggestion-club"
+            data-club="books"
+            type="button"
+        >
+
+            <span class="club-avatar">
+                B
+            </span>
+
+            <span class="suggestion-username">
+                Books That Changed Us
+            </span>
+
+            <span class="suggestion-action">
+                Join
+            </span>
+
+        </button>
+
+
+        <button
+            class="suggestion-club"
+            data-club="strange"
+            type="button"
+        >
+
+            <span class="club-avatar">
+                W
+            </span>
+
+            <span class="suggestion-username">
+                Strange Worlds
+            </span>
+
+            <span class="suggestion-action">
+                Join
+            </span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROFILE PREVIEW MODAL
+===================================================== -->
+
+<div
+    class="profile-modal"
+    id="profileModal"
+    aria-hidden="true"
+>
+
+    <div class="profile-modal-backdrop"></div>
+
+
+    <div
+        class="profile-modal-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalProfileName"
+    >
+
+        <button
+            class="modal-close"
+            id="profileModalClose"
+            type="button"
+            aria-label="Close profile"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-profile-layout">
+
+            <!-- PROFILE IMAGE -->
+
+            <div class="modal-profile-left">
+
+                <div
+                    class="modal-profile-avatar"
+                    id="modalProfileAvatar"
+                >
+                    J
+                </div>
+
+                <button
+                    class="modal-follow-button"
+                    id="modalFollowButton"
+                    type="button"
+                >
+                    FOLLOW
+                </button>
+
+            </div>
+
+
+            <!-- PROFILE INFORMATION -->
+
+            <div class="modal-profile-info">
+
+                <p
+                    class="modal-profile-handle"
+                    id="modalProfileHandle"
+                >
+                    @jassleeen
+                </p>
+
+                <h3 id="modalProfileName">
+                    Jassleeen
+                </h3>
+
+                <p
+                    class="modal-profile-bio"
+                    id="modalProfileBio"
+                >
+                    Stories with a pulse.
+                </p>
+
+
+                <!-- FOLLOWERS / FOLLOWING -->
+
+                <div class="modal-profile-stats">
+
+                    <div>
+                        <strong id="modalArchived">
+                            42
+                        </strong>
+
+                        <span>
+                            archived
+                        </span>
+                    </div>
+
+
+                    <div>
+                        <strong id="modalFollowers">
+                            1200
+                        </strong>
+
+                        <span>
+                            followers
+                        </span>
+                    </div>
+
+
+                    <div>
+                        <strong id="modalFollowing">
+                            186
+                        </strong>
+
+                        <span>
+                            following
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <p
+                    class="modal-profile-note"
+                    id="modalProfileNote"
+                >
+                    You both keep stories that stay with you.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+        <!-- =================================================
+             SURPRISE
+        ================================================== -->
+
+        <section class="surprise-section">
+
+
+            <div class="surprise-inner">
+
+
+                <span class="surprise-number">
+                    06 / RANDOM ACCESS
+                </span>
+
+
+                <h2>
+
+                    Don't know what
+                    <br>
+
+                    you're looking for?
+
+                </h2>
+
+
+                <p>
+                    Good. Let Archivio choose.
+                </p>
+
+
+                <button
+                    class="surprise-big-button"
+                    id="bigSurpriseButton"
+                >
+
+                    <span>
+                        Let Archivio Choose
+                    </span>
+
+                    <strong>
+                        ↗
+                    </strong>
+
+                </button>
+
+
+                <div
+                    class="surprise-result"
+                    id="surpriseResult"
+                ></div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+
+        <footer>
+
+
+            <div class="footer-brand">
+
+                <img
+                    src="../assets/branding/archivio-logo.png"
+                    alt="Archivio"
+                >
+
+                <span>
+                    EVERY FAVOURITE HAS A PLACE.
+                </span>
+
+            </div>
+
+
+
+            <div class="footer-links">
+
+                <a href="../index.html">
+                    HOME
+                </a>
+
+                <a href="archive.html">
+                    ARCHIVE
+                </a>
+
+                <a href="profile.html">
+                    PROFILE
+                </a>
+
+            </div>
+
+
+
+            <span class="footer-number">
+                ARCHIVIO / 002
+            </span>
+
+
+        </footer>
+
+
+    </main>
+
+
+
+    <script src="../js/discover.js"></script>
+
+</body>
+
+</html>

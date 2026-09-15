@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ================= BASIC SETUP ================= -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Your Archive — Archivio</title>
+
+
+    <!-- ================= FAVICON ================= -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="../assets/branding/archivio-favicon.png"
+    >
+
+
+    <!-- ================= GOOGLE FONTS ================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ================= ARCHIVE CSS ================= -->
+
+    <link
+        rel="stylesheet"
+        href="../css/app/archive.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/app/archive-responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div
+        class="page-loader"
+        id="pageLoader"
+    >
+
+        <img
+            src="../assets/branding/archivio-logo.png"
+            alt="Archivio"
+        >
+
+        <p>
+            OPENING YOUR ARCHIVE...
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         TOP NAVIGATION
+    ====================================================== -->
+
+    <!-- =====================================================
+     TOP NAVIGATION
+====================================================== -->
+
+<header class="archive-nav">
+
+
+    <!-- LOGO -->
+
+    <a
+        href="../index.html"
+        class="archive-brand"
+    >
+
+        <img
+            src="../assets/branding/archivio-logo.png"
+            alt="Archivio logo"
+        >
+
+        <span>
+            ARCHIVIO
+        </span>
+
+    </a>
+
+
+    <!-- RIGHT SIDE NAVIGATION -->
+
+        <div class="archive-right-nav">
+
+    <nav class="archive-nav-links">
+
+        <a href="discover.html">
+            DISCOVER
+        </a>
+
+        <a
+            href="archive.html"
+            class="active"
+        >
+            ARCHIVE
+        </a>
+
+    </nav>
+
+</div>
+
+
+    </div>
+
+</header>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <!-- =================================================
+     ARCHIVE HERO
+================================================== -->
+
+<section class="archive-hero">
+
+
+    <!-- BACKGROUND SLIDESHOW -->
+
+    <div class="archive-hero-slideshow">
+
+
+        <div class="archive-hero-slide active">
+
+            <img
+                src="../assets/landing/interstellar.jpeg"
+                alt=""
+            >
+
+        </div>
+
+
+        <div class="archive-hero-slide">
+
+            <img
+                src="../assets/landing/night-circus.jpeg"
+                alt=""
+            >
+
+        </div>
+
+
+        <div class="archive-hero-slide">
+
+            <img
+                src="../assets/landing/her-poster.jpeg"
+                alt=""
+            >
+
+        </div>
+
+
+        <div class="archive-hero-slide">
+
+            <img
+                src="../assets/landing/the-eminem-show.jpeg"
+                alt=""
+            >
+
+        </div>
+
+
+        <div class="archive-hero-slide">
+
+            <img
+                src="../assets/landing/project-hail-mary-poster.jpeg"
+                alt=""
+            >
+
+        </div>
+
+
+    </div>
+
+
+    <!-- DARK IMAGE OVERLAY -->
+
+    <div class="archive-hero-image-overlay"></div>
+
+
+    <!-- HERO CONTENT -->
+
+    <div class="hero-index">
+        PERSONAL COLLECTION / 003
+    </div>
+
+
+    <div class="hero-content">
+
+        <p class="eyebrow">
+            YOUR PERSONAL ARCHIVE
+        </p>
+
+
+        <h1>
+
+            Everything
+
+            <br>
+
+            <em>
+                that stayed.
+            </em>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            A record of the movies, books and music
+            that became part of your story.
+
+        </p>
+
+    </div>
+
+
+    <!-- SLIDESHOW DOTS -->
+
+    <div class="archive-hero-dots">
+
+        <button
+            class="archive-hero-dot active"
+            data-slide="0"
+            aria-label="Slide 1"
+        ></button>
+
+        <button
+            class="archive-hero-dot"
+            data-slide="1"
+            aria-label="Slide 2"
+        ></button>
+
+        <button
+            class="archive-hero-dot"
+            data-slide="2"
+            aria-label="Slide 3"
+        ></button>
+
+        <button
+            class="archive-hero-dot"
+            data-slide="3"
+            aria-label="Slide 4"
+        ></button>
+
+        <button
+            class="archive-hero-dot"
+            data-slide="4"
+            aria-label="Slide 5"
+        ></button>
+
+    </div>
+
+
+</section>
+
+
+
+        <!-- =================================================
+             STATISTICS
+        ================================================== -->
+
+        <section class="stats-section">
+
+
+            <div class="section-label">
+
+                <span>
+                    01
+                </span>
+
+                YOUR ARCHIVE
+
+            </div>
+
+
+            <div class="stats-grid">
+
+
+                <article class="stat-card">
+
+                    <span
+                        class="stat-number"
+                        id="totalArchived"
+                    >
+                        0
+                    </span>
+
+                    <span class="stat-label">
+                        EVERYTHING
+                    </span>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <span
+                        class="stat-number"
+                        id="movieCount"
+                    >
+                        0
+                    </span>
+
+                    <span class="stat-label">
+                        MOVIES
+                    </span>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <span
+                        class="stat-number"
+                        id="bookCount"
+                    >
+                        0
+                    </span>
+
+                    <span class="stat-label">
+                        BOOKS
+                    </span>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <span
+                        class="stat-number"
+                        id="musicCount"
+                    >
+                        0
+                    </span>
+
+                    <span class="stat-label">
+                        MUSIC
+                    </span>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ARCHIVE COLLECTION
+        ================================================== -->
+
+        <section class="collection-section">
+
+
+            <!-- SECTION HEADER -->
+
+            <div class="collection-header">
+
+
+                <div>
+
+                    <p class="eyebrow">
+                        02 / THE COLLECTION
+                    </p>
+
+                    <h2>
+                        Things worth
+                        <em>keeping.</em>
+                    </h2>
+
+                </div>
+
+
+                <!-- SORT -->
+
+                <div class="collection-controls">
+
+                    <label for="sortArchive">
+                        SORT BY
+                    </label>
+
+                    <select id="sortArchive">
+
+                        <option value="newest">
+                            NEWEST
+                        </option>
+
+                        <option value="oldest">
+                            OLDEST
+                        </option>
+
+                        <option value="az">
+                            A — Z
+                        </option>
+
+                        <option value="za">
+                            Z — A
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- CATEGORY FILTER -->
+
+            <div class="archive-filters">
+
+                <button
+                    class="filter-button active"
+                    data-filter="all"
+                    type="button"
+                >
+                    ALL
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="movie"
+                    type="button"
+                >
+                    MOVIES
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="book"
+                    type="button"
+                >
+                    BOOKS
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="music"
+                    type="button"
+                >
+                    MUSIC
+                </button>
+
+                <button
+                    class="clear-button"
+                    id="clearArchive"
+                    type="button"
+                >
+                    CLEAR ALL
+                </button>
+
+            </div>
+
+
+
+            <!-- ARCHIVE GRID -->
+
+            <div
+                class="archive-grid"
+                id="archiveGrid"
+            >
+
+                <!-- JavaScript creates archive cards here -->
+
+            </div>
+
+
+
+            <!-- EMPTY STATE -->
+
+            <div
+                class="empty-archive"
+                id="emptyArchive"
+            >
+
+                <div class="empty-number">
+                    000
+                </div>
+
+                <p class="eyebrow">
+                    NOTHING ARCHIVED YET
+                </p>
+
+                <h3>
+                    Your archive
+                    <em>is waiting.</em>
+                </h3>
+
+                <p>
+                    Find something worth keeping
+                    and bring it here.
+                </p>
+
+                <a
+                    href="discover.html"
+                    class="empty-button"
+                >
+                    EXPLORE DISCOVER
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             TIMELINE
+        ================================================== -->
+
+        <section class="timeline-section">
+
+
+            <div class="section-label">
+
+                <span>
+                    03
+                </span>
+
+                ARCHIVE HISTORY
+
+            </div>
+
+
+            <div class="timeline-heading">
+
+                <h2>
+                    Your taste,
+                    <br>
+                    <em>in time.</em>
+                </h2>
+
+                <p>
+                    Every addition becomes a small
+                    piece of your story.
+                </p>
+
+            </div>
+
+
+            <div
+                class="timeline"
+                id="archiveTimeline"
+            >
+
+                <!-- Timeline generated by JS -->
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             COLLECTION IDEAS
+        ================================================== -->
+
+        <section class="collections-section">
+
+
+            <div class="section-label">
+
+                <span>
+                    04
+                </span>
+
+                COLLECTIONS
+
+            </div>
+
+
+            <div class="collections-heading">
+
+                <h2>
+                    Give your favourites
+                    <em>a world.</em>
+                </h2>
+
+                <p>
+                    Not everything belongs together.
+                    Some things belong together because
+                    of how they made you feel.
+                </p>
+
+            </div>
+
+
+            <div class="collection-cards">
+
+
+                <article class="collection-card image-card">
+
+    <img
+        src="../assets/landing/MichaelJackson.jpeg"
+        alt="Michael Jackson"
+    >
+
+    <div class="collection-image-overlay"></div>
+
+    <span class="collection-number">
+        01
+    </span>
+
+    <div>
+        <p>
+            MOOD / 001
+        </p>
+
+        <h3>
+            Rainy
+            <em>Evenings.</em>
+        </h3>
+    </div>
+
+    <span class="collection-arrow">
+        ↗
+    </span>
+
+</article>
+
+
+
+                <article class="collection-card image-card">
+
+    <img
+        src="../assets/landing/HarryPotter.jpeg"
+        alt="Harry Potter"
+    >
+
+    <div class="collection-image-overlay"></div>
+
+    <span class="collection-number">
+        02
+    </span>
+
+    <div>
+        <p>
+            MEMORY / 002
+        </p>
+
+        <h3>
+            Things That
+            <em>Changed Me.</em>
+        </h3>
+    </div>
+
+    <span class="collection-arrow">
+        ↗
+    </span>
+
+</article>
+
+                <article class="collection-card image-card">
+
+                    <img
+                        src="../assets/landing/her-poster.jpeg"
+                        alt="Her"
+                    >
+
+                    <div class="collection-image-overlay"></div>
+
+                    <span class="collection-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <p>
+                            COMFORT / 003
+                        </p>
+
+                        <h3>
+                            Comfort
+                            <em>Archive.</em>
+                        </h3>
+
+                    </div>
+
+                    <span class="collection-arrow">
+                        ↗
+                    </span>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SURPRISE
+        ================================================== -->
+
+        <section class="surprise-section">
+
+
+            <div class="surprise-copy">
+
+                <p class="eyebrow">
+                    NOT SURE WHAT TO REVISIT?
+                </p>
+
+                <h2>
+                    Let your archive
+                    <br>
+                    <em>choose for you.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="surprise-action">
+
+                <button
+                    class="surprise-button"
+                    id="archiveSurpriseBtn"
+                    type="button"
+                >
+                    SURPRISE ME
+                    <span>↗</span>
+                </button>
+
+                <p
+                    class="surprise-result"
+                    id="surpriseResult"
+                ></p>
+
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         NOTE MODAL
+    ====================================================== -->
+
+    <div
+        class="note-modal"
+        id="noteModal"
+        aria-hidden="true"
+    >
+
+        <div class="note-modal-box">
+
+
+            <button
+                class="modal-close"
+                id="noteModalClose"
+                type="button"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+
+            <p class="eyebrow">
+                PERSONAL NOTE
+            </p>
+
+
+            <h3 id="noteModalTitle">
+                Why I saved this.
+            </h3>
+
+
+            <p
+                class="note-modal-subtitle"
+                id="noteModalSubtitle"
+            >
+                Add a small memory to this archive entry.
+            </p>
+
+
+            <textarea
+                id="archiveNoteInput"
+                placeholder="Why did this stay with you?"
+                maxlength="300"
+            ></textarea>
+
+
+            <div class="note-modal-actions">
+
+                <button
+                    class="modal-cancel"
+                    id="noteCancel"
+                    type="button"
+                >
+                    CANCEL
+                </button>
+
+                <button
+                    class="modal-save"
+                    id="noteSave"
+                    type="button"
+                >
+                    SAVE NOTE
+                    <span>↗</span>
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../js/archive.js"></script>
+
+
+</body>
+
+</html>

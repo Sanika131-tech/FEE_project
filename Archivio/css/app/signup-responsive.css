@@ -1,0 +1,418 @@
+/* =====================================================
+   ARCHIVIO
+   SIGNUP PAGE — RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET / SMALL LAPTOP
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .signup-page {
+        grid-template-columns: 1fr 0.9fr;
+    }
+
+    .signup-intro {
+        padding: 35px 5vw;
+    }
+
+    .signup-panel {
+        padding: 35px 5vw;
+    }
+
+    .signup-intro-content h1 {
+        font-size: clamp(58px, 6vw, 90px);
+    }
+
+    .signup-header h2 {
+        font-size: clamp(40px, 4.5vw, 60px);
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .signup-page {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ================= LEFT SIDE ================= */
+
+    .signup-intro {
+        min-height: 650px;
+        height: 75vh;
+    }
+
+
+    .signup-intro-content h1 {
+        font-size: clamp(
+            60px,
+            10vw,
+            100px
+        );
+    }
+
+
+    .signup-intro-content p {
+        margin-left: 0;
+        max-width: 400px;
+    }
+
+
+    /* ================= RIGHT SIDE ================= */
+
+    .signup-panel {
+        min-height: auto;
+
+        padding:
+            80px
+            10vw;
+    }
+
+
+    .signup-form {
+        max-width: 600px;
+    }
+
+
+    .signup-login-prompt {
+        max-width: 600px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* ================= LEFT SIDE ================= */
+
+    .signup-intro {
+        min-height: 580px;
+        height: 75vh;
+
+        padding:
+            28px
+            7vw;
+    }
+
+
+    .signup-intro-top {
+        gap: 11px;
+    }
+
+
+    .signup-logo {
+        width: 38px;
+        height: 38px;
+    }
+
+
+    .signup-intro-label {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+
+    .signup-intro-content {
+        max-width: 100%;
+    }
+
+
+    .signup-intro-content h1 {
+        font-size: clamp(
+            48px,
+            13vw,
+            75px
+        );
+
+        line-height: 0.86;
+
+        letter-spacing: -2px;
+    }
+
+
+    .signup-intro-content h1 span {
+        margin-left: 5vw;
+    }
+
+
+    .signup-intro-content p {
+        max-width: 290px;
+
+        margin-top: 28px;
+
+        margin-left: 5vw;
+
+        font-size: 11px;
+
+        line-height: 1.7;
+    }
+
+
+    .signup-intro-bottom {
+        gap: 14px;
+    }
+
+
+    .signup-slider-dots {
+        gap: 7px;
+    }
+
+
+    .signup-slider-dot {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .signup-slider-dot.active {
+        width: 19px;
+    }
+
+
+    .signup-intro-number {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+
+    /* ================= RIGHT PANEL ================= */
+
+    .signup-panel {
+        padding:
+            65px
+            7vw;
+    }
+
+
+    .signup-header {
+        margin-bottom: 35px;
+    }
+
+
+    .signup-form-label {
+        margin-bottom: 14px;
+
+        font-size: 8px;
+
+        letter-spacing: 2.5px;
+    }
+
+
+    .signup-header h2 {
+        font-size: clamp(
+            42px,
+            12vw,
+            65px
+        );
+
+        line-height: 0.88;
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .signup-header p {
+        margin-top: 16px;
+
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+
+    /* ================= NAME ROW ================= */
+
+    .signup-name-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    /* ================= FORM ================= */
+
+    .form-group {
+        margin-bottom: 24px;
+    }
+
+
+    .form-group label {
+        font-size: 8px;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 9px;
+    }
+
+
+    .form-group input {
+        font-size: 12px;
+
+        padding: 11px 0;
+    }
+
+
+    /* ================= PASSWORD RULES ================= */
+
+    .password-rules {
+        gap: 5px;
+
+        margin-top: 9px;
+    }
+
+
+    .password-rules span {
+        padding:
+            4px 6px;
+
+        font-size: 6.5px;
+
+        letter-spacing: .5px;
+    }
+
+
+    /* ================= TERMS ================= */
+
+    .signup-terms {
+        margin-top: 5px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .checkbox-label {
+        font-size: 8px !important;
+
+        line-height: 1.5;
+    }
+
+
+    .checkbox-label input {
+        flex-shrink: 0;
+    }
+
+
+    /* ================= MESSAGE ================= */
+
+    .signup-message {
+        min-height: 17px;
+
+        margin-bottom: 7px;
+
+        font-size: 9px;
+    }
+
+
+    /* ================= BUTTON ================= */
+
+    .signup-button {
+        min-height: 58px;
+
+        padding:
+            17px
+            45px;
+
+        font-size: 9px;
+
+        letter-spacing: 1.7px;
+    }
+
+
+    .signup-button-arrow {
+        right: 17px;
+
+        font-size: 15px;
+    }
+
+
+    /* ================= LOGIN ================= */
+
+    .signup-login-prompt {
+        margin-top: 23px;
+
+        padding-top: 18px;
+
+        font-size: 9px;
+    }
+
+
+    .signup-login-prompt a {
+        letter-spacing: 1.2px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .signup-intro {
+        min-height: 520px;
+    }
+
+
+    .signup-intro-content h1 {
+        font-size: 45px;
+    }
+
+
+    .signup-intro-content p {
+        font-size: 10px;
+
+        max-width: 250px;
+    }
+
+
+    .signup-panel {
+        padding:
+            55px
+            6vw;
+    }
+
+
+    .signup-header h2 {
+        font-size: 40px;
+    }
+
+
+    .password-rules span {
+        font-size: 6px;
+
+        padding:
+            4px
+            5px;
+    }
+
+
+    .signup-button {
+        min-height: 55px;
+
+        font-size: 8px;
+    }
+
+
+    .signup-login-prompt {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+}

@@ -1,0 +1,1352 @@
+/* =====================================================
+   ARCHIVIO
+   PROFILE PAGE
+===================================================== */
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background: #F4F0E8;
+
+    color: #171717;
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-weight: 400;
+
+    overflow-x: hidden;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+/* =====================================================
+   LOADER
+===================================================== */
+
+.profile-loader {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    background: #171717;
+
+    color: #F4F0E8;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    transition:
+        opacity .6s ease,
+        visibility .6s ease;
+}
+
+
+.profile-loader.hidden {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+}
+
+
+.profile-loader img {
+
+    width: 50px;
+
+    filter:
+        brightness(0)
+        invert(1);
+}
+
+
+.profile-loader p {
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    opacity: .6;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.profile-nav {
+
+    height: 76px;
+
+    padding: 0 5vw;
+
+    background: #F4F0E8;
+
+    border-bottom:
+        1px solid rgba(23,23,23,.15);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    z-index: 100;
+}
+
+
+.profile-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.profile-brand img {
+
+    width: 32px;
+
+    height: 32px;
+
+    object-fit: contain;
+
+    display: block;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(20%)
+        sepia(25%)
+        saturate(1200%)
+        hue-rotate(320deg)
+        brightness(85%);
+}
+
+
+.profile-right-nav {
+
+    margin-left: auto;
+}
+
+
+.profile-nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.profile-nav-links a {
+
+    position: relative;
+
+    font-size: 9px;
+
+    letter-spacing: 1.7px;
+
+    color: #77736B;
+
+    transition: .25s ease;
+}
+
+
+.profile-nav-links a:hover,
+.profile-nav-links a.active {
+
+    color: #6E2636;
+}
+
+
+.profile-nav-links a.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: -10px;
+
+    height: 1px;
+
+    background: #6E2636;
+}
+
+
+/* =====================================================
+   GENERAL
+===================================================== */
+
+.section-label {
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #77736B;
+
+    display: flex;
+
+    gap: 12px;
+
+    align-items: center;
+}
+
+
+.section-label span {
+
+    color: #6E2636;
+}
+
+
+.eyebrow {
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #A83A52;
+
+    margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   PROFILE HERO
+===================================================== */
+
+.profile-hero {
+
+    min-height: 580px;
+
+    padding:
+        90px 7vw
+        70px;
+
+    position: relative;
+
+    background: #D8D0C0;
+
+    overflow: hidden;
+}
+
+
+.profile-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+
+    height: 520px;
+
+    border: 1px solid rgba(23,23,23,.12);
+
+    border-radius: 50%;
+
+    right: -100px;
+
+    top: -180px;
+}
+
+
+.profile-hero-number {
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #68635A;
+
+    margin-bottom: 90px;
+}
+
+
+.profile-identity {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.profile-avatar-large {
+
+    width: 190px;
+
+    height: 190px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #6E2636;
+
+    color: #F4F0E8;
+
+    display: grid;
+
+    place-items: center;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 110px;
+
+    font-style: italic;
+}
+
+
+.profile-identity-text h1 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(75px, 10vw, 145px);
+
+    font-weight: 500;
+
+    line-height: .75;
+
+    letter-spacing: -.06em;
+}
+
+
+.profile-handle {
+
+    margin-top: 25px;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    color: #68635A;
+}
+
+
+.profile-bio {
+
+    max-width: 390px;
+
+    margin-top: 25px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 25px;
+
+    line-height: 1.1;
+
+    font-style: italic;
+}
+
+
+/* =====================================================
+   PROFILE STATS
+===================================================== */
+
+.profile-stats {
+
+    margin-top: 85px;
+
+    border-top:
+        1px solid rgba(23,23,23,.18);
+
+    padding-top: 25px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.profile-stat {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    border-right:
+        1px solid rgba(23,23,23,.15);
+
+    padding-left: 20px;
+}
+
+
+.profile-stat:first-child {
+
+    padding-left: 0;
+}
+
+
+.profile-stat:last-child {
+
+    border-right: none;
+}
+
+
+.profile-stat strong {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 42px;
+
+    font-weight: 500;
+}
+
+
+.profile-stat span {
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    color: #77736B;
+}
+
+
+/* =====================================================
+   ARCHIVE SECTION
+===================================================== */
+
+.profile-archive-section {
+
+    padding:
+        110px 7vw
+        120px;
+
+    background: #F4F0E8;
+}
+
+
+.profile-section-heading {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+}
+
+
+.profile-section-heading h2 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(60px, 7vw, 105px);
+
+    line-height: .8;
+
+    font-weight: 500;
+
+    letter-spacing: -.05em;
+}
+
+
+.profile-section-heading h2 em {
+
+    color: #6E2636;
+
+    font-style: italic;
+}
+
+
+.view-all {
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    color: #6E2636;
+
+    border-bottom:
+        1px solid #6E2636;
+
+    padding-bottom: 7px;
+}
+
+
+.view-all span {
+
+    margin-left: 8px;
+}
+
+
+/* =====================================================
+   FILTERS
+===================================================== */
+
+.profile-filters {
+
+    display: flex;
+
+    gap: 25px;
+
+    margin-top: 60px;
+
+    border-bottom:
+        1px solid rgba(23,23,23,.15);
+
+    padding-bottom: 12px;
+}
+
+
+.profile-filter {
+
+    background: none;
+
+    border: none;
+
+    color: #77736B;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    padding-bottom: 10px;
+
+    position: relative;
+}
+
+
+.profile-filter.active {
+
+    color: #6E2636;
+}
+
+
+.profile-filter.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: -13px;
+
+    height: 1px;
+
+    background: #6E2636;
+}
+
+
+/* =====================================================
+   ARCHIVE GRID
+===================================================== */
+
+.profile-archive-grid {
+
+    margin-top: 35px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+
+.archive-profile-card {
+
+    position: relative;
+
+    min-height: 430px;
+
+    overflow: hidden;
+
+    background: #171717;
+
+    color: #F4F0E8;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    padding: 24px;
+}
+
+
+.archive-profile-card img {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform .7s ease;
+}
+
+
+.archive-profile-card:hover img {
+
+    transform: scale(1.06);
+}
+
+
+.archive-profile-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(13,13,13,.05),
+            rgba(13,13,13,.9)
+        );
+}
+
+
+.archive-profile-number {
+
+    position: absolute;
+
+    top: 22px;
+
+    left: 22px;
+
+    z-index: 2;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+}
+
+
+.archive-profile-info {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.archive-profile-type {
+
+    color: #C56A7D;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 10px;
+}
+
+
+.archive-profile-info h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 38px;
+
+    line-height: .9;
+
+    font-weight: 500;
+}
+
+
+.archive-profile-info h3 em {
+
+    color: #C56A7D;
+
+    font-style: italic;
+}
+
+
+.archive-profile-year {
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    opacity: .55;
+
+    margin-top: 12px;
+}
+
+
+/* =====================================================
+   EMPTY ARCHIVE
+===================================================== */
+
+.profile-empty {
+
+    grid-column: 1 / -1;
+
+    min-height: 300px;
+
+    border: 1px solid rgba(23,23,23,.18);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+
+.profile-empty h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 55px;
+
+    font-weight: 500;
+}
+
+
+.profile-empty h3 em {
+
+    color: #6E2636;
+}
+
+
+.profile-empty p {
+
+    font-size: 12px;
+
+    color: #77736B;
+
+    margin-top: 15px;
+}
+
+
+/* =====================================================
+   COLLECTIONS
+===================================================== */
+
+.profile-collections-section {
+
+    padding:
+        110px 7vw
+        120px;
+
+    background: #E9E3D6;
+}
+
+
+.profile-collection-grid {
+
+    margin-top: 60px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+
+.profile-collection-card {
+
+    min-height: 420px;
+
+    padding: 25px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+.profile-collection-card > div {
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.profile-collection-card.dark {
+
+    background: #171717;
+
+    color: #F4F0E8;
+}
+
+
+.profile-collection-card.paper {
+
+    background: #D8D0C0;
+
+    color: #171717;
+}
+
+
+.profile-collection-card.image {
+
+    background: #171717;
+
+    color: #F4F0E8;
+}
+
+
+.profile-collection-card.image img {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .7s ease;
+}
+
+
+.profile-collection-card.image:hover img {
+
+    transform: scale(1.06);
+}
+
+
+.collection-image-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(13,13,13,.1),
+            rgba(13,13,13,.8)
+        );
+}
+
+
+.collection-number {
+
+    position: relative;
+
+    z-index: 3;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+}
+
+
+.profile-collection-card p {
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    opacity: .6;
+
+    margin-bottom: 17px;
+}
+
+
+.profile-collection-card h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 48px;
+
+    line-height: .85;
+
+    font-weight: 500;
+}
+
+
+.profile-collection-card h3 em {
+
+    color: #6E2636;
+
+    font-style: italic;
+}
+
+
+.profile-collection-card.dark h3 em,
+.profile-collection-card.image h3 em {
+
+    color: #C56A7D;
+}
+
+
+.collection-arrow {
+
+    position: relative;
+
+    z-index: 3;
+
+    align-self: flex-end;
+
+    width: 35px;
+
+    height: 35px;
+
+    border:
+        1px solid currentColor;
+
+    border-radius: 50%;
+
+    display: grid;
+
+    place-items: center;
+
+    transition: .3s ease;
+}
+
+
+.profile-collection-card:hover
+.collection-arrow {
+
+    transform: rotate(45deg);
+}
+
+
+/* =====================================================
+   TASTE
+===================================================== */
+
+.taste-section {
+
+    padding:
+        120px 7vw;
+
+    background: #171717;
+
+    color: #F4F0E8;
+}
+
+
+.taste-section .section-label {
+
+    color: #99958D;
+}
+
+
+.taste-layout {
+
+    margin-top: 70px;
+
+    display: grid;
+
+    grid-template-columns:
+        .8fr 1.2fr;
+
+    gap: 10vw;
+
+    align-items: center;
+}
+
+
+.taste-intro h2 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(65px, 8vw, 115px);
+
+    line-height: .8;
+
+    font-weight: 500;
+
+    letter-spacing: -.05em;
+}
+
+
+.taste-intro h2 em {
+
+    color: #C56A7D;
+
+    font-style: italic;
+}
+
+
+.taste-intro > p:last-child {
+
+    max-width: 380px;
+
+    margin-top: 40px;
+
+    color: #A8A39A;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+.taste-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 35px;
+}
+
+
+.taste-item {
+
+    display: grid;
+
+    grid-template-columns:
+        220px 1fr 45px;
+
+    gap: 20px;
+
+    align-items: center;
+}
+
+
+.taste-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.taste-info span {
+
+    font-size: 8px;
+
+    color: #C56A7D;
+}
+
+
+.taste-info strong {
+
+    font-size: 9px;
+
+    letter-spacing: 1.2px;
+
+    font-weight: 400;
+}
+
+
+.taste-bar {
+
+    height: 1px;
+
+    background: #403D39;
+
+}
+
+
+.taste-progress {
+
+    height: 1px;
+
+    background: #C56A7D;
+}
+
+
+.taste-percent {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 22px;
+
+    font-weight: 400;
+
+    text-align: right;
+}
+
+
+/* =====================================================
+   YEAR
+===================================================== */
+
+.year-section {
+
+    min-height: 620px;
+
+    padding:
+        110px 7vw;
+
+    background: #D8D0C0;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.year-background {
+
+    position: absolute;
+
+    right: -20px;
+
+    bottom: -100px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 38vw;
+
+    line-height: .7;
+
+    color: rgba(110,38,54,.07);
+
+    pointer-events: none;
+}
+
+
+.year-content {
+
+    margin-top: 70px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.year-content h2 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(65px, 8vw, 120px);
+
+    line-height: .78;
+
+    font-weight: 500;
+
+    letter-spacing: -.05em;
+}
+
+
+.year-content h2 em {
+
+    color: #6E2636;
+
+    font-style: italic;
+}
+
+
+.year-content > p:not(.eyebrow) {
+
+    max-width: 390px;
+
+    margin-top: 35px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #68635A;
+}
+
+
+.year-button {
+
+    margin-top: 35px;
+
+    padding: 15px 20px;
+
+    background: #6E2636;
+
+    color: #F4F0E8;
+
+    border: none;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+}
+
+
+.year-button span {
+
+    margin-left: 20px;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.profile-footer {
+
+    padding:
+        30px 7vw;
+
+    background: #F4F0E8;
+
+    border-top:
+        1px solid rgba(23,23,23,.15);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    color: #77736B;
+}
+
+
+.profile-footer > div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #171717;
+
+    font-weight: 600;
+}
+
+
+.profile-footer img {
+
+    width: 28px;
+
+    height: 28px;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(20%)
+        sepia(25%)
+        saturate(1200%)
+        hue-rotate(320deg)
+        brightness(85%);
+}

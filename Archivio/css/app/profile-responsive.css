@@ -1,0 +1,330 @@
+/* =====================================================
+   PROFILE RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+
+    .profile-identity {
+
+        gap: 35px;
+
+    }
+
+
+    .profile-avatar-large {
+
+        width: 150px;
+        height: 150px;
+
+        font-size: 85px;
+
+    }
+
+
+    .profile-archive-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .profile-collection-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .profile-collection-card:last-child {
+
+        grid-column:
+            1 / -1;
+
+    }
+
+
+    .taste-layout {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 70px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+
+    .profile-nav {
+
+        height: 68px;
+
+        padding:
+            0 6vw;
+
+    }
+
+
+    .profile-nav-links {
+
+        gap: 16px;
+
+    }
+
+
+    .profile-nav-links a {
+
+        font-size: 7px;
+
+    }
+
+
+    .profile-brand {
+
+        font-size: 9px;
+
+    }
+
+
+    .profile-brand img {
+
+        width: 27px;
+        height: 27px;
+
+    }
+
+
+    /* HERO */
+
+
+    .profile-hero {
+
+        min-height: auto;
+
+        padding:
+            65px 7vw
+            55px;
+
+    }
+
+
+    .profile-hero-number {
+
+        margin-bottom: 60px;
+
+    }
+
+
+    .profile-identity {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 35px;
+
+    }
+
+
+    .profile-avatar-large {
+
+        width: 110px;
+        height: 110px;
+
+        font-size: 65px;
+
+    }
+
+
+    .profile-identity-text h1 {
+
+        font-size:
+            clamp(65px, 18vw, 100px);
+
+    }
+
+
+    .profile-bio {
+
+        font-size: 21px;
+
+    }
+
+
+    /* STATS */
+
+
+    .profile-stats {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 25px;
+
+        margin-top: 60px;
+
+    }
+
+
+    .profile-stat {
+
+        border-right: none;
+
+        padding-left: 0;
+
+    }
+
+
+    .profile-stat strong {
+
+        font-size: 35px;
+
+    }
+
+
+    /* ARCHIVE */
+
+
+    .profile-archive-section,
+    .profile-collections-section,
+    .taste-section,
+    .year-section {
+
+        padding:
+            80px 7vw;
+
+    }
+
+
+    .profile-section-heading {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 30px;
+
+    }
+
+
+    .profile-section-heading h2 {
+
+        font-size:
+            clamp(60px, 17vw, 90px);
+
+    }
+
+
+    .profile-archive-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .archive-profile-card {
+
+        min-height: 470px;
+
+    }
+
+
+    /* COLLECTIONS */
+
+
+    .profile-collection-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .profile-collection-card:last-child {
+
+        grid-column: auto;
+
+    }
+
+
+    /* TASTE */
+
+
+    .taste-item {
+
+        grid-template-columns:
+            1fr 45px;
+
+        gap: 12px;
+
+    }
+
+
+    .taste-info {
+
+        grid-column:
+            1 / -1;
+
+    }
+
+
+    .taste-bar {
+
+        grid-column: 1;
+
+    }
+
+
+    .taste-percent {
+
+        grid-column: 2;
+
+    }
+
+
+    /* YEAR */
+
+
+    .year-section {
+
+        min-height: 550px;
+
+    }
+
+
+    .year-background {
+
+        font-size: 65vw;
+
+    }
+
+
+    /* FOOTER */
+
+
+    .profile-footer {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        align-items: flex-start;
+
+    }
+
+}
